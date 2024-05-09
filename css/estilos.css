@@ -1,0 +1,279 @@
+  /* Algunas fuentes  */
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0F0F0; 
+    color: #000;
+}
+
+h1, h2,h3 {
+    font-weight: normal;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+strong{
+    font-family: 'Franklin Gothic Medium';
+    color: rgb(158, 31, 158);
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background: rgb(129,249,178);
+    background: linear-gradient(172deg, rgb(161, 240, 183) 0%, rgb(250, 166, 246) 100%); /* https://cssgradient.io/ */
+    background-attachment: fixed;
+    background-size: 500% 100%;
+    animation: fondoanima 6s ease infinite;
+    position:sticky;
+    z-index: 1000; /* para que siempre esté arriba*/
+}
+
+
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.Contenido-header {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Contenido-header .logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #fff;
+    -webkit-animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.Contenido-header .logo img:hover {
+transform: scale(1.1);}
+.Contenido-header .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease
+}
+
+
+.Contenido-header .menu {
+    list-style: none;
+    display: flex;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+    transition: all 1s ease;
+}
+
+
+.Contenido-header .menu li {
+    margin-left: 20px;
+    transition: all 0.4s ease;
+}
+
+.Contenido-header .menu li a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: all 0.4s ease;
+}
+
+.Contenido-header .menu li a:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos del título */
+.title {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-animation: tilt-in-left-2 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: tilt-in-left-2 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+.title h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.title p {
+    font-size: 32px; 
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', serif; 
+}
+
+
+
+
+
+.div2 {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 50px;
+}
+
+.sidebar {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+.sidebar:hover{
+    -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+.correo{
+    color: grey;
+    font-size: 10px;
+    text-align: center;
+}
+.sidebarinfo {
+    margin-bottom: 20px;
+}
+
+.sidebarinfo h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #A0A0A0;
+}
+
+.sidebarinfo ul {
+    list-style: none;
+}
+
+.sidebarinfo ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebarinfo ul li .icono {
+    font-size: 32px;
+    margin-right: 10px;
+    color: #A0A0A0;
+}
+
+.sidebarinfo ul li .text {
+    font-size: 18px;
+}
+
+
+.fotoindex {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 10px;
+}
+.fotoindex2 {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 10px;
+    max-width: 60%; 
+    margin: 0 auto; 
+}
+.fotoindex img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    border-radius: 10px;
+}
+.fotoindex2 img{
+    width: 100%;
+    
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    border-radius: 10px;}
+.fotoindex img:hover{
+    transform: scale(1.01);
+}
+.fotoindex2 img:hover{
+    transform: scale(1.01);
+}
+
+/* ME FALTA POR HACER*/
+.footer {
+    width: 100%;
+    background-color: #A0A0A0;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 18px;
+    color: #fff;
+}
+
+
+
+/* Boton */
+.volverArriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10%;
+    z-index: 1000;
+
+    font-size: 30px;
+    font-weight:bolder;
+    font-family:  'Lucida Sans Unicode';
+}
+
+.volverArriba:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* linea */
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #000; 
+    margin: 0 auto; 
+}
+

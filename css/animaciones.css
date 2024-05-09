@@ -1,0 +1,135 @@
+/* MENU MOVIL */
+@media screen and (min-width: 769px) {
+    .menu.fixed {
+        position: fixed;
+        top: 0;
+        left: 55%;
+        transform: translateX(-50%);
+        font-size: 24px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px 20px;
+        border-radius: 20px;
+        z-index: 1000;
+        transition: all 0.3s ease;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu.fixed {
+        position: fixed;
+        top: 0;
+        align-self: center;
+        transform: translateX(-50%);
+        font-size: 18px; 
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px 20px;
+        border-radius: 20px;
+        z-index: 1000;
+        transition: all 0.3s ease;
+    }
+}
+
+
+@keyframes fondoanima { 
+    0%{ 
+        background-position: 0% 0%;
+     } 
+    50%{ 
+        background-position: 100% 0%; 
+    } 
+    100%{ 
+        background-position: 0% 0%; 
+    } 
+}
+
+@media screen and (max-width: 768px) {
+    .Contenido-header {
+        flex-direction: column;
+    }
+
+    .Contenido-header .logo {
+        margin-bottom: 20px;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+    }
+}
+/* Animaciones de https://animista.net/ */
+
+
+@-webkit-keyframes fade-in-top {
+    0% {
+        -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-top {
+    0% {
+        -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes tilt-in-left-2 {
+    0% {
+      -webkit-transform: rotateX(30deg) translateX(-300px) skewX(30deg);
+              transform: rotateX(30deg) translateX(-300px) skewX(30deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg) translateX(0) skewX(0deg);
+              transform: rotateX(0deg) translateX(0) skewX(0deg);
+      opacity: 1;
+    }
+  }
+  @keyframes tilt-in-left-2 {
+    0% {
+      -webkit-transform: rotateX(30deg) translateX(-300px) skewX(30deg);
+              transform: rotateX(30deg) translateX(-300px) skewX(30deg);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg) translateX(0) skewX(0deg);
+              transform: rotateX(0deg) translateX(0) skewX(0deg);
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes shadow-drop-center {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
+  @keyframes shadow-drop-center {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
+
+
+  /* Animacion para fotos*/
+ 
