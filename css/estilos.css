@@ -1,8 +1,8 @@
   /* Algunas fuentes  */
   @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
-
-
+  @import url('https://fonts.googleapis.com/css2?family=Micro+5+Charted&family=Poetsen+One&family=UnifrakturCook:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Micro+5+Charted&family=Poetsen+One&family=UnifrakturCook:wght@700&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -35,16 +35,26 @@ strong{
 .header {
     width: 100%;
     height: 100vh;
-    background: rgb(129,249,178);
-    background: linear-gradient(172deg, rgb(161, 240, 183) 0%, rgb(250, 166, 246) 100%); /* https://cssgradient.io/ */
+    background: rgb(129, 249, 178);
+    background: linear-gradient(172deg, rgb(85, 209, 120) 0%, rgb(196, 65, 189) 100%);
     background-attachment: fixed;
+    animation: fondoanima 10s ease infinite;
     background-size: 500% 100%;
-    animation: fondoanima 6s ease infinite;
-    position:sticky;
-    z-index: 1000; /* para que siempre esté arriba*/
-}
+    position: sticky;
+    z-index: 1000;
+  }
 
-
+  .wave {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, rgba(255,255,255,0) 80%);
+    border-radius: 50%;
+    pointer-events: none; 
+    animation: ola 1s ease-out forwards;
+    opacity: 0;
+  }
+  
 
 .header::before {
     content: "";
@@ -64,6 +74,7 @@ strong{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 1000;
 }
 
 .Contenido-header .logo {
@@ -93,7 +104,7 @@ transform: scale(1.1);}
     font-style: normal;
     -webkit-animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-
+            
     transition: all 1s ease;
 }
 
@@ -119,6 +130,7 @@ transform: scale(1.1);}
 /* Estilos del título */
 .title {
     position: absolute;
+    z-index: 1000;
     bottom: 40px;
     left: 40px;
     max-width: 600px;
@@ -267,8 +279,6 @@ transform: scale(1.1);}
     background-color: #0056b3;
 }
 
-
-
 /* linea */
 .line {
     width: 100%;
@@ -277,3 +287,84 @@ transform: scale(1.1);}
     margin: 0 auto; 
 }
 
+.div3{
+    background: rgb(240,240,240);
+    background: linear-gradient(180deg, rgba(240,240,240,1) 0%, rgba(194,190,178,1) 100%);
+}
+
+@keyframes subir {  /* https://www.youtube.com/watch?v=AbCYziNyjvk */
+    from {
+      opacity: 0;
+      scale: 0%;
+    }
+    to {
+      opacity: 1;
+      scale: 100%;
+    }
+  }
+  .fotoindex2{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+  
+    animation-timeline: --image;
+    animation-name: subir;
+  
+    animation-range: entry 10% cover 70%;
+    animation-fill-mode:both;
+  }
+
+  .galeria{
+    position: relative;
+    margin: 0 auto;
+    font-size: 50px;
+    font-family: "Micro 5 Charted", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow: hidden;
+    border-right: 2px solid hsl(0, 0%, 80%);
+    white-space: nowrap;
+    animation: maquinaescribir 10s steps(20) 1s infinite normal both,
+      TextCursor 800ms infinite;
+      
+  }
+  
+  @keyframes maquinaescribir {
+    0% {
+      width: 0;
+    }
+    35% {
+      width: 325px;
+    }
+    100% {
+      width: 325px;
+    }
+  }
+  @keyframes TextCursor {
+    from {
+      border-right-color: hsl(0, 0%, 0%);
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
+
+.div4{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(194,190,178,1) 100%);
+}
+table{
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 40px 30px;
+}
+td.c{
+    padding: 15px;
+	background-color: white;
+	border-radius: 4px;
+	box-shadow: 4px 4px 2px #8f8f8f;
+}
+.div5{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
