@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/animaciones.css">
+    <link rel="stylesheet" href="../css/Contacto.css">
+    <link rel="shortcut icon" href="../imagenes/favicon.jpg" />
+</head>
+<body>
+    <div class="header" id="header">
+        <div class="Contenido-header">
+            <div class="logo">
+                <img src="../imagenes/perfil.jpg" >
+            </div>
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </div>
+        <form class="formulario" autocomplete="off">
+            <div class="control">
+                <h1>Iniciar Sesión</h1>
+            </div>
+            <div class="control cubo">
+                <input type="text" name="username" placeholder="Nombre de usuario">
+                <div class="fondo"></div>
+            </div>
+            <div class="control cubo">
+                <input type="password" name="password" placeholder="Contraseña">
+                <div class="fondo"></div>
+            </div>
+            <button type="button" class="ingresar" onclick="mostrarMensaje()">Ingresar</button>
+        </form>
+    </div>
+
+    <script>
+        function mostrarMensaje() {
+            alert("¡Enviado!");
+        }
+    </script>
+</body>
+</html>

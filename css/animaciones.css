@@ -271,3 +271,36 @@ h1 span:nth-child(6){
 h1 span:nth-child(7){
   animation-delay: 3s;
 }
+ 
+@keyframes flecha {
+  0%{
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+
+    transform: translateX(0px);
+  }
+}
+
+@keyframes maquinaescribir {
+  0% {
+    width: 0;
+  }
+  35% {
+    width: 325px;
+  }
+  100% {
+    width: 325px;
+  }
+}
+@keyframes TextCursor {
+  from {
+    border-right-color: hsl(0, 0%, 0%);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}

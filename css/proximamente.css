@@ -1,0 +1,40 @@
+/* https://www.youtube.com/watch?v=sUuuQ0DoMd0 */
+
+body{
+  background: black;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a{
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration: none;
+  }
+
+.luz{
+  position: absolute;
+  top: 50%; /* centro */
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 12px 48px;
+  color: #ffffff;
+  background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
+  background-position: 0;/* centro */
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+}
+
+@keyframes shine{
+  0%{
+    background-position: 0}
+  60%{
+    background-position: 180px}
+  100%{
+    background-position: 180px}
+}

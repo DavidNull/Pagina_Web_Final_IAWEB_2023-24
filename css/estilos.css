@@ -3,6 +3,8 @@
   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Micro+5+Charted&family=Poetsen+One&family=UnifrakturCook:wght@700&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Micro+5+Charted&family=Poetsen+One&family=UnifrakturCook:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=BenchNine:700');
+ @import url( 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -242,20 +244,6 @@ transform: scale(1.1);}
     transform: scale(1.01);
 }
 
-/* ME FALTA POR HACER*/
-.footer {
-    width: 100%;
-    background-color: #A0A0A0;
-    padding: 20px;
-    text-align: center;
-}
-
-.footer p {
-    font-size: 18px;
-    color: #fff;
-}
-
-
 
 /* Boton */
 .volverArriba {
@@ -328,25 +316,7 @@ transform: scale(1.1);}
       
   }
   
-  @keyframes maquinaescribir {
-    0% {
-      width: 0;
-    }
-    35% {
-      width: 325px;
-    }
-    100% {
-      width: 325px;
-    }
-  }
-  @keyframes TextCursor {
-    from {
-      border-right-color: hsl(0, 0%, 0%);
-    }
-    to {
-      border-right-color: transparent;
-    }
-  }
+
 
 .div4{
     background: rgb(0,0,0);
@@ -363,8 +333,76 @@ td.c{
 	border-radius: 4px;
 	box-shadow: 4px 4px 2px #8f8f8f;
 }
+td.c:hover{
+    box-shadow: 6px 6px 2px #b8b8b8;
+    transition: 0.5s ease;
+}
 .div5{
     background-color: black;
     display: flex;
     justify-content: center;
+
 }
+
+/* hobbies*/
+.div5{margin:0; padding:0; box-sizing:border-box;}
+
+.hobby{
+  width:100%;
+  height:100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+
+}
+span.hobbies{
+    font-family: 'Lucida Sans';
+    font-size: xx-large;
+} 
+
+  
+/* footer*/
+footer p{
+    text-align: center;
+    color: white;
+    font-family: Menlo, monospace;
+}
+footer ul {
+    justify-items: center;
+    margin: auto;
+    grid-auto-flow: row;
+    grid-gap: 24px;
+}
+footer ul li {
+    display: inline-grid;
+  }
+  
+  footer ul li a {
+    color: white;
+    text-decoration: none;
+    box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+  }
+  
+  footer ul li a:hover {
+    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+  }
+  
+  footer ul li:last-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  footer ul li:hover ~ li p {
+    animation: flecha 0.7s infinite;
+  }
+  
+  
+  footer  {
+    display: flex;
+    height: 10vh;
+    background-color: #2c2c2c;
+    line-height: 1.3;
+    font-family: Menlo, monospace;
+    justify-items: center;
+  }
+ 
