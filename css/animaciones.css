@@ -1,9 +1,9 @@
 /* MENU MOVIL */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1080px) {
     .menu.fixed {
         position: fixed;
         top: 0;
-        left: 55%;
+        left: 50%;
         transform: translateX(-50%);
         font-size: 24px;
         background-color: rgba(255, 255, 255, 0.8);
@@ -27,7 +27,28 @@
         z-index: 1000;
         transition: all 0.3s ease;
     }
+    .fotoindex{
+      height: 115%;
+    }
+  
 }
+
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+  .menu.fixed {
+      position: fixed;
+      top: 0;
+      left: 29%;
+      align-self: center;
+      transform: translateX(-50%);
+      font-size: 18px; 
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px 20px;
+      border-radius: 20px;
+      z-index: 1000;
+      transition: all 0.3s ease;
+  }
+}
+
 @keyframes ola {
   0% {
     transform: translate(-50%, -50%) scale(0.2);

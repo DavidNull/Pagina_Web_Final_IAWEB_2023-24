@@ -132,7 +132,7 @@ transform: scale(1.1);}
 /* Estilos del título */
 .title {
     position: absolute;
-    z-index: 1000;
+    z-index: 100;
     bottom: 40px;
     left: 40px;
     max-width: 600px;

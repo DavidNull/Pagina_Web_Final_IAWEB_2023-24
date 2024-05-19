@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pagina1</title>
+    <link rel="stylesheet" href="../css/pagina1.css">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/animaciones.css">
-    <link rel="shortcut icon" href="../imagenes/favicon.jpg" />
+    <link rel="shortcut icon" href="../imagenes/favicon.jpg">
+
 </head>
 <body >
     <div class="header" id="header">
@@ -17,16 +19,106 @@
             <ul class="menu">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../paginas/contacto.html">Contacto</a></li>
-                <li><a href="./paginas/proximamente.html">Proximamente...</a></li>
+                <li><a href="../paginas/proximamente.html">Proximamente...</a></li>
             </ul>
         </div>
-        <div class="title">
-            <h1>Me queda:</h1>
-            <p>icono</p>
-            <p>Mapa</p>
-            <p>Acceder a paginas informativas</p>
-            <p>Algo con aside</p>
+        <div class="title preview" onmouseover="mostrarInfo()" onmouseout="ocultarInfo()">
+            <h1>Sobre mi</h1>
         </div>
+    </div>
+    
+    <div class="line"></div>
+    <div class="div2">       <div class="sidebar">
+        <div class="sidebarinfo">
+            <h2>¿Donde estudio?</h2>
+            <p> Grado Superior de  <span class="asir">ASIR  </span><span class="flechaasir">⬅️</span> <br><br><br><br><br> en el <strong>Bezmiliana</strong></p>
+        </div>
+    </div>
+    <div class="fotoindex"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6396.321768273658!2d-4.281455525935495!3d36.71869717227049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd725a63781b2c3d%3A0x26c28e24e04e8576!2sInstituto%20Bezmiliana!5e0!3m2!1sen!2ses!4v1715713944507!5m2!1sen!2ses" width="600px" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+    <div class="line"></div>
+    <br>
+    <div class="recursos">
+        <h2>Recursos que utilicé</h2><br>
+        <table>
+            <tr>
+                <td class="c">
+                    <img src="../imagenes/Fondodegradado.jpg" alt="Imagen 1">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Fondo degradado con animación</h3><br>
+                            <p>https://cssgradient.io/</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="c">
+                    <img src="../imagenes/Animaciones.jpg" alt="Imagen 2">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Animaciones al cargar la página (animaciones.css)</h3><br>
+                            <p>https://animista.net/</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="c">
+                    <img src="../imagenes/Comentarios.jpg" alt="Imagen 3">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Animación de los comentarios</h3><br>
+                            <p>https://codepen.io/EricPorter/</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="c">
+                    <img src="../imagenes/ola.jpg" alt="Imagen 4">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Efecto ola con el ratón</h3><br>
+                            <p>https://www.youtube.com/watch?v=E9QRYFFanTI</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="c">
+                    <img src="../imagenes/botonarriba.jpg" alt="Imagen 5">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Botón Volver Arriba</h3><br>
+                            <p>https://www.falconmasters.com/web-design/boton-ir-arriba-javascript/</p>
+                        </div>
+                    </div>
+                </td>
+                <td class="c">
+                    <img src="../imagenes/imagenes.jpg" alt="Imagen 6">
+                    <div class="overlay">
+                        <div class="overlay-content">
+                            <h3>Animación de imágenes</h3><br>
+                            <p>https://www.youtube.com/watch?v=AbCYziNyjvk</p>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="line"></div>
+    <br>
+   <div class="recursos">
+        <h2>Otros proyectos</h2>
+        <br><br>
+        <h3>Calculadora con JavaScript</h3>
+    </div>
+    <br>
+    <div class="proyectos">  
+        <iframe src="https://davidnull.github.io/Calculadora/" class="calculadora" frameborder="0"></iframe>
+    </div>
+    <br><br>
+    <div class="recursos">
+     <h3>Temporizador para apagar el pc con python</h3> <br>
+        <div id="recursos">
+            <a href="../recursos/turn off timer.exe" class="download" download="turn off timer.exe">Descargar Programa</a>
+        </div>
+        <br><br>
     </div>
     <footer>
         <ul>
@@ -39,6 +131,9 @@
             </li>
           </ul>
     </footer>
+    <button id="volverArriba" class="volverArriba" onclick="volverArriba()">↑</button>
+    <script src="../js/volverArriba.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/ola.js"></script>
 </body>
-
 </html>
