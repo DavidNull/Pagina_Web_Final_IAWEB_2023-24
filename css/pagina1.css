@@ -54,10 +54,6 @@ iframe:hover{
     display: flex;
     justify-content: center;
 }
-.recursos a{
-    display: flex;
-    justify-content: center;
-}
 
 
 table {
@@ -133,8 +129,14 @@ iframe.calculadora{
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    width: 20%;
+    
 }
 .download:hover {
-    background-color: #0056b3;}
+    background-color: #0056b3;
+}
 
+.descargar-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
