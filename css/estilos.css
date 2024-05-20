@@ -283,21 +283,20 @@ transform: scale(1.1);}
 @keyframes subir {  /* https://www.youtube.com/watch?v=AbCYziNyjvk */
     from {
       opacity: 0;
-      scale: 0%;
+      scale: 0;
     }
     to {
       opacity: 1;
-      scale: 100%;
+      scale: 1;
     }
   }
   .fotoindex2{
-    view-timeline-name: --image;
-    view-timeline-axis: block;
-  
-    animation-timeline: --image;
+    view-timeline-name: --patata;
+    animation-timeline: --patata;
     animation-name: subir;
-  
-    animation-range: entry 10% cover 70%;
+    /* 
+    view-timeline-axis: block; */
+    animation-range: entry cover 70%;
     animation-fill-mode:both;
   }
 

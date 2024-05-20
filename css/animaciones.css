@@ -32,6 +32,50 @@
     }
   
 }
+@media screen and (max-width: 400px) {
+  .menu.fixed {
+      position: fixed;
+      top: 0;
+      transform: translateX(-50%);
+      font-size: 14px; 
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px 20px;
+      border-radius: 20px;
+      z-index: 1000;
+      transition: all 0.3s ease;
+  }
+  
+  .Contenido-header .menu li a {
+      padding: 10px 10px;
+      background-color: #fff;
+      border-radius: 20px;
+      font-size: 14px;
+      transition: all 0.4s ease;
+      display: inline-flex;
+  }
+
+  .fotoindex {
+      height: auto;
+  }
+  
+  footer {
+      font-size: 12px;
+  }
+  .div5 h1{
+    width:20%;
+    justify-content: center;
+  }
+  span.hobbies{
+    justify-content: center;
+    font-size: small
+  }
+  button{
+    display: none;
+  }
+
+}
+
+
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
   .menu.fixed {

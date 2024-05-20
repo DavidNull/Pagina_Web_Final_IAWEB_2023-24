@@ -140,3 +140,9 @@ iframe.calculadora{
     justify-content: center;
     align-items: center;
 }
+.noticia{
+height: 300px;
+}
+.noticia:hover{
+    transform: scale(1);
+}
