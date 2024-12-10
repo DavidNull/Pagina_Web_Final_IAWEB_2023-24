@@ -3,7 +3,7 @@
 
 📍 **Accede aquí**: [Página Final](https://pagina-final-six.vercel.app/)  
 
-## 🛠️ Tecnologías Utilizadas  
+## 🛠️ Lenguajes Usados
 - 🎨 **CSS** para estilos personalizados.  
 - 💻 **HTML** para la estructura de la página.  
 - ⚙️ **JavaScript** para funcionalidades interactivas.  
